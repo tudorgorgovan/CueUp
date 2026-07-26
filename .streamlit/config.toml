@@ -1,0 +1,41 @@
+[theme]
+base = "dark"
+primaryColor = "#1a7a4a"
+backgroundColor = "#070d1a"
+secondaryBackgroundColor = "#0f1a2e"
+textColor = "#e8edf5"
+linkColor = "#d4af37"
+borderColor = "#1c3350"
+codeBackgroundColor = "#0c1526"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "10px"
+buttonRadius = "10px"
+linkUnderline = false
+
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+baseFontSize = 15
+headingFontSizes = ["30px", "23px", "19px", "16px", "14px", "13px"]
+headingFontWeights = [800, 700, 600, 600, 500, 500]
+
+# Accente: auriu pentru clasamente si valori, verde pentru starea "ok"
+yellowColor = "#d4af37"
+greenColor = "#22a05f"
+redColor = "#e05252"
+orangeColor = "#e0a030"
+blueColor = "#4a90d9"
+grayColor = "#6a8099"
+
+chartCategoricalColors = ["#d4af37", "#22a05f", "#4a90d9", "#c586c0", "#e0a030", "#5ec9b0", "#e05252"]
+chartSequentialColors = ["#0b1322", "#10233c", "#153356", "#1a4370", "#1f538a", "#2463a4", "#2973be", "#3f8bd0", "#6ba9de", "#9cc7ea"]
+
+dataframeBorderColor = "#1c3350"
+dataframeHeaderBackgroundColor = "#0f1a2e"
+
+[theme.sidebar]
+backgroundColor = "#0b1322"
+secondaryBackgroundColor = "#132038"
+codeBackgroundColor = "#0b1322"
+textColor = "#c4d4e8"
+borderColor = "#1c3350"
+primaryColor = "#d4af37"
