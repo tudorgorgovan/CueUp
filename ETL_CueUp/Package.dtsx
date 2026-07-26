@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{66346F2C-F753-425E-BACD-E27A01D448F1}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{14A431D9-AA9C-42CB-A63E-89CA541384D6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -117,7 +117,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABTI09b9rik4L6u0l5E4sW0X+kkA8XAkvouUmBXmMYqWwAAAAAOgAAAAAIAACAAAACKWC8sQeNcfHTOHFE8Bz7IxaJuyyMa/yPH9rATZlG0/yAAAABSQFlMWHc+OamChWpAoMg7zgV109/2A2ma4FDuyDia80AAAACVaX+m2Rtfqp4BxsWmDH4bfwW1bHwxh/GM/F7RTbcjVomf3IXW+/DobPpU7m+ZfsGlskfJXGiUMYWBtXDDq7ED</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC3SZT4m5pyQG/8tZUc5knPUtJ2J9GSgoxhjGWqpAQAcwAAAAAOgAAAAAIAACAAAAAoaci8YFG/ANG/TlpuFlYXv1PREKc8O+jpvPUp9c2yqiAAAADGchFc0zLILReBZH7pQYeuDsWr7MgBW0XYtZY94bSga0AAAAB62TcVwwQefkPXVYvGwWNn9GyP9Hj0EX8eM4uvxPfoKy606vCm4h+D5AwPWufFDPU0h4mFjI5k+Wi4GeUnV6Zy</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -566,6 +566,23 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\CHECK_ID"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9E7DC4DA-72FE-4EFF-AF59-248E0108C046}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CHECK_ID"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}"
+          SQLTask:SqlStatementSource="DBCC CHECKIDENT ('dbo.Jucatori', RESEED);&#xA;DBCC CHECKIDENT ('dbo.Rezervari', RESEED);&#xA;DBCC CHECKIDENT ('dbo.Meciuri', RESEED);&#xA;DBCC CHECKIDENT ('dbo.IstoricRating', RESEED);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\DROP + CREATE"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -579,7 +596,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}"
-          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS dbo.IstoricRating;&#xA;DROP TABLE IF EXISTS dbo.Meciuri;&#xA;DROP TABLE IF EXISTS dbo.Rezervari;&#xA;DROP TABLE IF EXISTS dbo.Jucatori;&#xA;DROP TABLE IF EXISTS dbo.Mese;&#xA;DROP TABLE IF EXISTS dbo.Cluburi;&#xA;DROP TABLE IF EXISTS dbo.Orase;&#xA;&#xA;IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    email           VARCHAR(150)  NOT NULL UNIQUE,&#xA;    id_oras         INT           NOT NULL,&#xA;    nivel_declarat  INT           NOT NULL,&#xA;    rating_elo      INT           NOT NULL,&#xA;    data_inscriere  DATE          NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT           NOT NULL PRIMARY KEY,&#xA;    id_masa       INT           NOT NULL,&#xA;    id_jucator    INT           NOT NULL,&#xA;    data_start    DATETIME2(0)  NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)  NOT NULL,&#xA;    status        VARCHAR(15)   NOT NULL,&#xA;    suma          DECIMAL(10,2) NOT NULL,&#xA;    creata_la     DATETIME2(0)  NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT         NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT         NOT NULL UNIQUE,&#xA;    id_jucator_1  INT         NOT NULL,&#xA;    id_jucator_2  INT         NULL,&#xA;    scor_1        INT         NULL,&#xA;    scor_2        INT         NULL,&#xA;    id_castigator INT         NULL,&#xA;    tip           VARCHAR(10) NOT NULL,&#xA;    stare         VARCHAR(15) NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Stare CHECK (stare IN ('finalizat','programat','asteptare','expirat','fara_rezultat')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT          NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT          NOT NULL,&#xA;    id_meci         INT          NOT NULL,&#xA;    rating_inainte  INT          NOT NULL,&#xA;    rating_dupa     INT          NOT NULL,&#xA;    data            DATETIME2(0) NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)      NOT NULL,&#xA;    email           VARCHAR(150)      NOT NULL UNIQUE,&#xA;    id_oras         INT               NOT NULL,&#xA;    nivel_declarat  INT               NOT NULL,&#xA;    rating_elo      INT               NOT NULL,&#xA;    data_inscriere  DATE              NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_masa       INT               NOT NULL,&#xA;    id_jucator    INT               NOT NULL,&#xA;    data_start    DATETIME2(0)      NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)      NOT NULL,&#xA;    status        VARCHAR(15)       NOT NULL,&#xA;    suma          DECIMAL(10,2)     NOT NULL,&#xA;    creata_la     DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT               NOT NULL UNIQUE,&#xA;    id_jucator_1  INT               NOT NULL,&#xA;    id_jucator_2  INT               NULL,&#xA;    scor_1        INT               NULL,&#xA;    scor_2        INT               NULL,&#xA;    id_castigator INT               NULL,&#xA;    tip           VARCHAR(10)       NOT NULL,&#xA;    stare         VARCHAR(15)       NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Stare CHECK (stare IN ('finalizat','programat','asteptare','expirat','fara_rezultat')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT               NOT NULL,&#xA;    id_meci         INT               NOT NULL,&#xA;    rating_inainte  INT               NOT NULL,&#xA;    rating_dupa     INT               NOT NULL,&#xA;    data            DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3717,6 +3734,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Sequence Container" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{FA822ECB-5D8F-4015-94F9-AFD3A02C2E34}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\CHECK_ID" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -3729,7 +3754,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="109.5,42"
           Id="Package\DROP + CREATE"
@@ -3897,13 +3922,13 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="692.5,575.5"
-          Size="692.5,618.5"
+          PanelSize="693,532"
+          Size="693,575"
           Id="Package\Sequence Container"
           TopLeft="40.5714285714282,120.559523210698" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="388.285714285714,76.6666664944755">
+          TopLeft="388.410714285714,76.6666664944755">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3923,6 +3948,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="166.5,42"
+          Id="Package\CHECK_ID"
+          TopLeft="309.388888888889,737.768517833939" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="389.855158730159,695.559523210698">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.2089946232409"
+              Start="0,0"
+              End="0,34.7089946232409">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.7089946232409" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3930,15 +3981,15 @@
     design-time-name="Package\Sequence Container\Load_Cluburi">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="131.5,42"
-          Id="Package\Sequence Container\Load_Cluburi\cluburi_csv"
-          TopLeft="242.5,129.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="112.5,42"
           Id="Package\Sequence Container\Load_Cluburi\Cluburi"
           TopLeft="252,218" />
+        <NodeLayout
+          Size="131.5,42"
+          Id="Package\Sequence Container\Load_Cluburi\cluburi_csv"
+          TopLeft="242.5,129.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Load_Cluburi.Paths[Flat File Source Output]"
           TopLeft="308.25,171.5">
@@ -3958,7 +4009,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4134,7 +4187,7 @@
     design-time-name="Package\Sequence Container\Load_Mese">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="126,42"
           Id="Package\Sequence Container\Load_Mese\mese_csv"
@@ -4162,7 +4215,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4185,7 +4240,7 @@
     design-time-name="Package\Sequence Container\Load_Orase">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="127,42"
           Id="Package\Sequence Container\Load_Orase\orase_csv"
@@ -4213,7 +4268,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
