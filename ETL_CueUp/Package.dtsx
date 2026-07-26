@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{14A431D9-AA9C-42CB-A63E-89CA541384D6}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{99043276-67D2-4378-B12C-65CF74AB7FDC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -117,7 +117,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC3SZT4m5pyQG/8tZUc5knPUtJ2J9GSgoxhjGWqpAQAcwAAAAAOgAAAAAIAACAAAAAoaci8YFG/ANG/TlpuFlYXv1PREKc8O+jpvPUp9c2yqiAAAADGchFc0zLILReBZH7pQYeuDsWr7MgBW0XYtZY94bSga0AAAAB62TcVwwQefkPXVYvGwWNn9GyP9Hj0EX8eM4uvxPfoKy606vCm4h+D5AwPWufFDPU0h4mFjI5k+Wi4GeUnV6Zy</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhNNoZxYT/z929vvif5Aae14PapjcIqlDMLK/N2U5eAgAAAAAOgAAAAAIAACAAAAAHXl2BqT40S26p7dcINGCNOcTPf2EKj0NYuhuBYdkErCAAAADAL+pE+iCm6xrwQQkniUaZL7MCDtEE2XQFERCY1u7pF0AAAADxyKhhMXFOw900Ldw23aa5qkSTc8GoHqkhKCLj5lL+YWhkH+gTPtLzJhO+whewOmNVC5rm1JDnvXKjthr8EYVx</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -135,7 +135,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\04_Jucatori.csv">
+          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\hacka\CueUp\data\04_Jucatori.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -143,7 +143,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator"
-              DTS:DTSID="{F1673F1B-458D-41BC-BE4C-9680A52FBE7D}"
+              DTS:DTSID="{511B1AD0-BE80-4D77-9412-2BC5B06328B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -152,7 +152,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="nume"
-              DTS:DTSID="{6F8778B7-8F13-4F72-BD05-EADD43D2AA1E}"
+              DTS:DTSID="{83206801-1E6B-479E-A929-D6682FE1328D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -161,7 +161,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="email"
-              DTS:DTSID="{08B35C08-80D4-42E3-A9A1-29D39476C545}"
+              DTS:DTSID="{26B4826B-F153-473B-99AB-7EF78551785F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -169,31 +169,40 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_oras"
-              DTS:DTSID="{B2C06346-F2D9-4B84-B930-5A04F60422BE}"
+              DTS:DTSID="{856C4612-401E-4071-A105-93D90B13CE39}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="21"
+              DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="nivel_declarat"
-              DTS:DTSID="{76BB7333-3792-46F4-8DAD-1193B0512A9E}"
+              DTS:DTSID="{85E35557-E7B5-4FBE-A00F-429CE6203C85}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="21"
+              DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="rating_elo"
-              DTS:DTSID="{278EB229-DB5E-41BA-88CD-50F989489A08}"
+              DTS:DTSID="{69863855-6D40-4FDF-9E8E-4A5C3AA96D03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_inscriere"
+              DTS:DTSID="{6361D25C-194D-424B-8E40-59838F20FE07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:DataType="133"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="data_inscriere"
-              DTS:DTSID="{43EADCD5-2218-40EC-BB40-D5F98A21EF0B}"
+              DTS:ObjectName="parola "
+              DTS:DTSID="{D7F35312-B209-46D9-8567-E1C89F43BA42}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -596,7 +605,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}"
-          SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)      NOT NULL,&#xA;    email           VARCHAR(150)      NOT NULL UNIQUE,&#xA;    id_oras         INT               NOT NULL,&#xA;    nivel_declarat  INT               NOT NULL,&#xA;    rating_elo      INT               NOT NULL,&#xA;    data_inscriere  DATE              NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_masa       INT               NOT NULL,&#xA;    id_jucator    INT               NOT NULL,&#xA;    data_start    DATETIME2(0)      NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)      NOT NULL,&#xA;    status        VARCHAR(15)       NOT NULL,&#xA;    suma          DECIMAL(10,2)     NOT NULL,&#xA;    creata_la     DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT               NOT NULL UNIQUE,&#xA;    id_jucator_1  INT               NOT NULL,&#xA;    id_jucator_2  INT               NULL,&#xA;    scor_1        INT               NULL,&#xA;    scor_2        INT               NULL,&#xA;    id_castigator INT               NULL,&#xA;    tip           VARCHAR(10)       NOT NULL,&#xA;    stare         VARCHAR(15)       NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Stare CHECK (stare IN ('finalizat','programat','asteptare','expirat','fara_rezultat')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT               NOT NULL,&#xA;    id_meci         INT               NOT NULL,&#xA;    rating_inainte  INT               NOT NULL,&#xA;    rating_dupa     INT               NOT NULL,&#xA;    data            DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)      NOT NULL,&#xA;    email           VARCHAR(150)      NOT NULL UNIQUE,&#xA;    id_oras         INT               NOT NULL,&#xA;    nivel_declarat  INT               NOT NULL,&#xA;    rating_elo      INT               NOT NULL,&#xA;    data_inscriere  DATE              NOT NULL,&#xA;    parola          VARCHAR(30)       NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_masa       INT               NOT NULL,&#xA;    id_jucator    INT               NOT NULL,&#xA;    data_start    DATETIME2(0)      NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)      NOT NULL,&#xA;    status        VARCHAR(15)       NOT NULL,&#xA;    suma          DECIMAL(10,2)     NOT NULL,&#xA;    creata_la     DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT               NOT NULL UNIQUE,&#xA;    id_jucator_1  INT               NOT NULL,&#xA;    id_jucator_2  INT               NULL,&#xA;    scor_1        INT               NULL,&#xA;    scor_2        INT               NULL,&#xA;    id_castigator INT               NULL,&#xA;    tip           VARCHAR(10)       NOT NULL,&#xA;    stare         VARCHAR(15)       NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Stare CHECK (stare IN ('finalizat','programat','asteptare','expirat','fara_rezultat')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT               NOT NULL,&#xA;    id_meci         INT               NOT NULL,&#xA;    rating_inainte  INT               NOT NULL,&#xA;    rating_dupa     INT               NOT NULL,&#xA;    data            DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1621,13 +1630,13 @@
                           lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[id_oras]" />
                         <inputColumn
                           refId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].Columns[nivel_declarat]"
-                          cachedDataType="ui8"
+                          cachedDataType="ui4"
                           cachedName="nivel_declarat"
                           externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].ExternalColumns[nivel_declarat]"
                           lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[nivel_declarat]" />
                         <inputColumn
                           refId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].Columns[rating_elo]"
-                          cachedDataType="ui8"
+                          cachedDataType="ui4"
                           cachedName="rating_elo"
                           externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].ExternalColumns[rating_elo]"
                           lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[rating_elo]" />
@@ -1637,6 +1646,14 @@
                           cachedName="data_inscriere"
                           externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].ExternalColumns[data_inscriere]"
                           lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[data_inscriere]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].Columns[parola ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="parola "
+                          externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].ExternalColumns[parola]"
+                          lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[parola ]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1673,6 +1690,12 @@
                           dataType="wstr"
                           length="10"
                           name="data_inscriere" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load_Jucatori\Jucatori.Inputs[OLE DB Destination Input].ExternalColumns[parola]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="parola" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1818,7 +1841,7 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[nivel_declarat]"
-                          dataType="ui8"
+                          dataType="ui4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[nivel_declarat]"
@@ -1838,7 +1861,7 @@
                         </outputColumn>
                         <outputColumn
                           refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[rating_elo]"
-                          dataType="ui8"
+                          dataType="ui4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[rating_elo]"
@@ -1876,6 +1899,28 @@
                               name="UseBinaryFormat">false</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[parola ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[parola ]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].Columns[parola ]"
+                          name="parola "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1901,16 +1946,22 @@
                           name="id_oras" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[nivel_declarat]"
-                          dataType="ui8"
+                          dataType="ui4"
                           name="nivel_declarat" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[rating_elo]"
-                          dataType="ui8"
+                          dataType="ui4"
                           name="rating_elo" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[data_inscriere]"
                           dataType="dbDate"
                           name="data_inscriere" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Load_Jucatori\jucatori_csv.Outputs[Flat File Source Output].ExternalColumns[parola ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="parola " />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3756,6 +3807,10 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="166.5,42"
+          Id="Package\CHECK_ID"
+          TopLeft="309.388888888889,737.768517833939" />
+        <NodeLayout
           Size="109.5,42"
           Id="Package\DROP + CREATE"
           TopLeft="335,34.6666664944755" />
@@ -3948,10 +4003,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166.5,42"
-          Id="Package\CHECK_ID"
-          TopLeft="309.388888888889,737.768517833939" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="389.855158730159,695.559523210698">
@@ -4034,7 +4085,7 @@
     design-time-name="Package\Sequence Container\Load_IstoricRating">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequence Container\Load_IstoricRating\istoric_rating_csv"
@@ -4062,7 +4113,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4136,7 +4189,7 @@
     design-time-name="Package\Sequence Container\Load_Meciuri">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="134.5,42"
           Id="Package\Sequence Container\Load_Meciuri\meciuri_csv"
@@ -4164,7 +4217,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4293,7 +4348,7 @@
     design-time-name="Package\Sequence Container\Load_Rezervari">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="124,42"
           Id="Package\Sequence Container\Load_Rezervari\Rezervari"
@@ -4321,7 +4376,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
