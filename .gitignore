@@ -1,7 +1,6 @@
 # Secrete locale - nu se comit niciodata
 .env
 .env.*
-!.env.example
 
 # Artefacte Visual Studio
 .vs/
