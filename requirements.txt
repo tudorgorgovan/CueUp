@@ -1,0 +1,13 @@
+# Dependentele aplicatiei CueUp.
+# Instalare:  python -m pip install -U -r requirements.txt
+
+# Streamlit 1.57+ este obligatoriu: aplicatia foloseste st.logo cu emoji,
+# st.pagination, st.container(horizontal=True) si st.metric(delta_description=...).
+# Pe versiuni mai vechi apar erori de tipul
+# "The image passed to st.logo is invalid".
+streamlit>=1.57
+
+pandas>=2.2
+pyodbc>=5.1
+python-dotenv>=1.0
+google-genai>=1.0
