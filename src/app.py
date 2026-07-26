@@ -25,19 +25,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Sigla din coltul din stanga sus, deasupra meniului. Click pe ea = pagina de start.
-# Folosim un fisier imagine, nu emoji: emoji-urile in st.logo sunt acceptate doar
-# de versiunile noi de Streamlit si crapa aplicatia pe versiunile mai vechi.
-# Sigla este decorativa: daca fisierul lipseste sau versiunea de Streamlit o
-# refuza, aplicatia trebuie sa porneasca mai departe, nu sa cada cu exceptie.
-_SIGLA = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                      "assets", "logo_8ball.png")
-if os.path.isfile(_SIGLA):
-    try:
-        st.logo(_SIGLA, size="large")
-    except Exception:
-        pass
-
 # ── Stare partajata intre pagini ──────────────────────────────────────────────
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
