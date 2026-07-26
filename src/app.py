@@ -26,7 +26,11 @@ st.set_page_config(
 )
 
 # Sigla din coltul din stanga sus, deasupra meniului. Click pe ea = pagina de start.
-st.logo("🎱", size="large")
+# Folosim un fisier imagine, nu emoji: emoji-urile in st.logo sunt acceptate doar
+# de versiunile noi de Streamlit si crapa aplicatia pe versiunile mai vechi.
+_SIGLA = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                      "assets", "logo_8ball.png")
+st.logo(_SIGLA, size="large")
 
 # ── Stare partajata intre pagini ──────────────────────────────────────────────
 if "logged_in" not in st.session_state:

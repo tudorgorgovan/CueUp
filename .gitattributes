@@ -3,6 +3,7 @@
 # Fisiere generate de unelte - git nu are voie sa le atinga.
 # Fara asta, normalizarea terminatiilor de linie si merge-ul textual
 # corup pachetul SSIS.
+*.png      binary
 *.dtsx     binary
 *.dtproj   binary
 *.database binary
