@@ -1,0 +1,19 @@
+id_club,nume,id_oras,adresa,telefon,ora_deschidere,ora_inchidere,rating_club
+1,Billiard Center Old Town,1,Str. Memorandumului nr. 109,0779232094,10:00,02:00,4.3
+2,Sala de Biliard Magic Cue,1,Str. Horea nr. 37,0740877764,09:00,00:00,4.0
+3,Billiard Center The Rack,1,Str. Memorandumului nr. 25,0766665842,11:00,02:00,4.3
+4,Club Biliard Royal,1,Bd. Eroilor nr. 87,0751988014,11:00,02:00,3.8
+5,Sala de Biliard Green Table,2,Bd. Independentei nr. 132,0776153266,12:00,00:00,3.7
+6,Billiard Lounge Break Point,2,Bd. Eroilor nr. 105,0750948343,12:00,23:00,4.2
+7,Snooker Club Nord,2,Str. Mihai Viteazul nr. 160,0744814825,11:00,23:00,4.1
+8,Billiard Lounge Champions,2,Bd. Eroilor nr. 153,0754541594,09:00,00:00,3.9
+9,Pool House Central,3,Str. Mihai Viteazul nr. 167,0753384527,10:00,23:00,3.3
+10,Club Biliard Ivory,3,Bd. Independentei nr. 16,0774862702,10:00,00:00,4.6
+11,Billiard Lounge Corner Pocket,4,Bd. Eroilor nr. 148,0740547726,09:00,00:00,3.2
+12,Sala de Biliard Regal,4,Str. Mihai Viteazul nr. 141,0729181464,10:00,00:00,4.1
+13,Club Biliard Victoria,5,Str. Mihai Viteazul nr. 147,0741257746,09:00,02:00,4.4
+14,Sala de Biliard Downtown,6,Piata Unirii nr. 60,0756801281,11:00,23:00,4.3
+15,Billiard Lounge Elite,7,Str. Republicii nr. 16,0741501247,10:00,02:00,3.9
+16,Pool House Diamond,8,Piata Unirii nr. 155,0735299758,10:00,02:00,3.5
+17,Billiard Lounge Black Ball,9,Str. Republicii nr. 82,0730438678,10:00,02:00,4.3
+18,Pool House Continental,10,Bd. Eroilor nr. 10,0776298721,12:00,00:00,4.1

@@ -1,0 +1,21 @@
+# Secrete locale - nu se comit niciodata
+.env
+.env.*
+!.env.example
+
+# Artefacte Visual Studio
+.vs/
+bin/
+obj/
+*.dtproj.user
+*.user
+*.suo
+
+# Backup-uri locale
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
