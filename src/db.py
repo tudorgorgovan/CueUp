@@ -8,7 +8,7 @@ Q4 (HAVING): orase_active              - orase cu cel putin N jucatori activi
 Q5 (HAVING): clasament_jucatori_activi - jucatori cu > N rezervari finalizate
 
 Autentificare: verify_login / email_exists / register_player
-  -> folosesc coloana `parola` din tabelul Jucatori (fara SQLite local)
+  -> folosesc coloana `parola` din tabelul Jucatori 
 
 Toate interogarile sunt parametrizate cu `?`, niciodata construite prin
 concatenare de string-uri. Citirile care nu depind de utilizator sunt puse in
