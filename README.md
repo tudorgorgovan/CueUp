@@ -5,10 +5,11 @@
 ![Azure SQL](https://img.shields.io/badge/Azure%20SQL-Database-0078D4?logo=microsoftazure&logoColor=white)
 ![SSIS](https://img.shields.io/badge/SSIS-ETL-CC2927?logo=microsoftsqlserver&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Reports-F2C811?logo=powerbi&logoColor=black)
+![Award](https://img.shields.io/badge/Hackathon-1st%20Place-FFD700)
 
 > Table booking and matchmaking platform for billiard clubs in Romania.
 
-Book a table at a real club, at a real time slot, and find an opponent who plays at your level. Built during the **Data Journey: From Cloud to AI** summer school.
+Book a table at a real club, at a real time slot, and find an opponent who plays at your level. Built during the **Data Journey: From Cloud to AI** summer school, where it won **first prize**.
 
 CueUp covers the full data pipeline: a synthetic dataset generated with AI, loaded through SSIS into an Azure SQL database, then consumed simultaneously by a Streamlit app and two Power BI reports.
 
