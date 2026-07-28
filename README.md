@@ -176,5 +176,3 @@ The database constraints are not decorative. During development, an SSIS load si
 
 - **Gorgovan Tudor** — ETL pipeline, Power BI reports, Gemini integration
 - **Mustață Bianca-Andreea** — Streamlit interface, SQL queries, documentation
-
-National University of Science and Technology Politehnica Bucharest, Faculty of Automatic Control and Computer Science.
