@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{99043276-67D2-4378-B12C-65CF74AB7FDC}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{DEEE159D-B0FD-4ADC-92F9-8A8B34E343FF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\02_Cluburi.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\02_Cluburi.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_club"
-              DTS:DTSID="{93699955-6F3F-4A0F-9FBD-78C87546CD9D}"
+              DTS:DTSID="{6E4B07C9-E8A4-4E0F-BDB4-4AFD80C94050}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="nume"
-              DTS:DTSID="{36529E4F-F102-4991-819E-E554876DCD20}"
+              DTS:DTSID="{E2F6307E-B27C-4320-AA35-E9A76762E16D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_oras"
-              DTS:DTSID="{03644A58-F019-4303-80D2-E16345BF9E1F}"
+              DTS:DTSID="{35621CA3-FDFD-4C55-B8D0-EC264FBF03C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="adresa"
-              DTS:DTSID="{87B886B1-DB05-4918-9B31-DE9F69F809FD}"
+              DTS:DTSID="{72D1260A-4756-46C3-8732-55DAAE7A088B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -73,7 +73,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="telefon"
-              DTS:DTSID="{F040EB13-4989-46A8-8A2C-98EDAB03FA09}"
+              DTS:DTSID="{CC07CD0B-A46A-4C01-B1BD-ECC024D9C256}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -81,7 +81,7 @@
               DTS:DataType="134"
               DTS:TextQualified="True"
               DTS:ObjectName="ora_deschidere"
-              DTS:DTSID="{F34A6AE0-1331-45A2-BA91-C56273D14930}"
+              DTS:DTSID="{556E9AD5-743B-447F-9F7B-8F396C88DA36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="134"
               DTS:TextQualified="True"
               DTS:ObjectName="ora_inchidere"
-              DTS:DTSID="{FB9BC496-5759-4241-8EF6-A6D4CD36598F}"
+              DTS:DTSID="{F7D3E052-FC55-40D9-8D22-D6121EC8A104}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -98,7 +98,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="rating_club"
-              DTS:DTSID="{AFC05FE8-312D-42EA-89FC-BFE4300DCA01}"
+              DTS:DTSID="{7BDB753C-A90D-425C-A0CA-FD358A6E254C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -113,11 +113,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=datajourney-hackaton.database.windows.net;User ID=sqladmin;Initial Catalog=CueUp;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}***SERVER-ELIMINAT-DIN-ISTORIC***.CueUp.***USER-ELIMINAT-DIN-ISTORIC***;">
+          DTS:ConnectionString="Data Source=project-server-mba.database.windows.net;User ID=bianca_admin;Initial Catalog=CueUpDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}***SERVER-ELIMINAT-DIN-ISTORIC***.CueUp.***USER-ELIMINAT-DIN-ISTORIC***;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhNNoZxYT/z929vvif5Aae14PapjcIqlDMLK/N2U5eAgAAAAAOgAAAAAIAACAAAAAHXl2BqT40S26p7dcINGCNOcTPf2EKj0NYuhuBYdkErCAAAADAL+pE+iCm6xrwQQkniUaZL7MCDtEE2XQFERCY1u7pF0AAAADxyKhhMXFOw900Ldw23aa5qkSTc8GoHqkhKCLj5lL+YWhkH+gTPtLzJhO+whewOmNVC5rm1JDnvXKjthr8EYVx</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKKny0nQh5UGVSux3XOcE9wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACmwMhqrEpzpnudGfKTorHy5fNajD3CYY+NTROmFxjHlgAAAAAOgAAAAAIAACAAAABNTq2gL92JzMkQwwQ6JMbOT/05s5diY5mN5lIz39TrgSAAAAC6nFCOWrg+95/Pv+4WVshGirvzm+OEN72twpkCBt4kZ0AAAACZS0EJJ2ek5c/lK9xqjR2n2lYGB3jpTMWOLyJjvP7UdSORlgwGk1v4rCICQwyhFwFa/8xs/wvolYwiVSZN6Nl8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -135,7 +135,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\hacka\CueUp\data\04_Jucatori.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\04_Jucatori.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -143,7 +143,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator"
-              DTS:DTSID="{511B1AD0-BE80-4D77-9412-2BC5B06328B9}"
+              DTS:DTSID="{D711B26C-E88A-4FD5-890C-2CEBAD0EAB24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -152,7 +152,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="nume"
-              DTS:DTSID="{83206801-1E6B-479E-A929-D6682FE1328D}"
+              DTS:DTSID="{62F966F5-E64A-4B2F-A65B-9668AD49D533}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -161,7 +161,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="email"
-              DTS:DTSID="{26B4826B-F153-473B-99AB-7EF78551785F}"
+              DTS:DTSID="{2CB4E483-D739-482E-B781-D7028C14CD6F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -169,7 +169,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_oras"
-              DTS:DTSID="{856C4612-401E-4071-A105-93D90B13CE39}"
+              DTS:DTSID="{094BDFCB-C523-4D3E-939F-8F8D6F068319}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,7 +177,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="nivel_declarat"
-              DTS:DTSID="{85E35557-E7B5-4FBE-A00F-429CE6203C85}"
+              DTS:DTSID="{7E81208D-B6BA-46D8-9D6C-F9411D5CFBCB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="rating_elo"
-              DTS:DTSID="{69863855-6D40-4FDF-9E8E-4A5C3AA96D03}"
+              DTS:DTSID="{5753C4C4-CBB8-44F2-9045-28E87F8AA0E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +193,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="data_inscriere"
-              DTS:DTSID="{6361D25C-194D-424B-8E40-59838F20FE07}"
+              DTS:DTSID="{301E7299-1EA5-4193-83AB-F7850F016767}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +202,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="parola "
-              DTS:DTSID="{D7F35312-B209-46D9-8567-E1C89F43BA42}"
+              DTS:DTSID="{45BA435E-4CE9-4870-8AE1-422862132DDA}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -222,7 +222,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\03_Mese.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\03_Mese.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_masa"
-              DTS:DTSID="{51A9E201-5553-44A5-9F21-386AC79827A3}"
+              DTS:DTSID="{59D47ED1-14D2-4112-BB0F-F1880B84853D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +238,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_club"
-              DTS:DTSID="{5B16771C-8775-43FA-BC82-F4690B69A26F}"
+              DTS:DTSID="{06DA9872-79F4-4CB7-8B1F-CDF977AB7130}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +247,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cod_masa"
-              DTS:DTSID="{E950623C-7EEE-4A18-9A4C-BEBCE4FF6181}"
+              DTS:DTSID="{CD3EFB10-AA84-4946-BD80-F2E56BA1A090}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -256,7 +256,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="tip_masa"
-              DTS:DTSID="{DA8E830F-D337-4153-8C9F-E122995AEF95}"
+              DTS:DTSID="{65400C15-36E8-42E6-9758-F3B20EA98AF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,7 +264,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="tarif_orar"
-              DTS:DTSID="{6AAD097E-CBDF-4883-9838-6391B7D6744A}"
+              DTS:DTSID="{07EE0EAB-C3CE-4172-952E-B3A700305BFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -272,7 +272,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="activa"
-              DTS:DTSID="{74A9C859-F2FD-4B64-B07A-FCC71F1F4C39}"
+              DTS:DTSID="{B53E85F4-54A0-4E11-9894-5071CC4ABE6F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -292,7 +292,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\01_Orase.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\01_Orase.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -300,7 +300,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_oras"
-              DTS:DTSID="{F022C507-F6D8-4AA0-8804-FA09AAF39DAE}"
+              DTS:DTSID="{FB433555-F903-4E04-A7E7-9407E6976ADE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -309,7 +309,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="nume_oras"
-              DTS:DTSID="{A4DEDD1F-07DF-49C8-AF2C-C3395AC0D6B2}"
+              DTS:DTSID="{20E1C8F8-CF27-4B81-8555-EE87BE0AE012}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -318,7 +318,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="judet"
-              DTS:DTSID="{DB788890-384A-443F-9EBB-FB91BC3AB7D9}"
+              DTS:DTSID="{4BF415B6-7B97-4B71-8FA7-E7A46C09FCF1}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -338,7 +338,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\05_Rezervari.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\05_Rezervari.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +346,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_rezervare"
-              DTS:DTSID="{27AD53C2-5467-4459-B40A-88B01E38E11C}"
+              DTS:DTSID="{34A6E040-3F15-4332-8801-8EE45FE14953}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -354,7 +354,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_masa"
-              DTS:DTSID="{B6298A77-CBE9-4BD5-A431-BDF4731CE33D}"
+              DTS:DTSID="{9A07D9BC-3A9A-4C8A-8809-A62EB973E989}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -362,7 +362,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator"
-              DTS:DTSID="{F0F4C672-501B-4183-B748-3E78AC6B6EA7}"
+              DTS:DTSID="{B88CFE46-F32B-44FE-AD27-43AE1E7FC619}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -370,7 +370,7 @@
               DTS:DataType="304"
               DTS:TextQualified="True"
               DTS:ObjectName="data_start"
-              DTS:DTSID="{E3B48127-7CF0-4028-AE9A-9A4B2E113A3D}"
+              DTS:DTSID="{6C1EA1F6-E09E-480C-9E08-270143D48BBF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -378,7 +378,7 @@
               DTS:DataType="304"
               DTS:TextQualified="True"
               DTS:ObjectName="data_sfarsit"
-              DTS:DTSID="{142AE1B7-61D5-49BE-B932-6EDE453B972C}"
+              DTS:DTSID="{40725BDD-383E-4A5D-A3CA-05CF007D0E0F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -387,7 +387,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="status"
-              DTS:DTSID="{0AF6D992-A162-419F-80A7-2CF1341A7E81}"
+              DTS:DTSID="{5A1B8834-92C7-4084-A4FF-CE96C8943487}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -395,7 +395,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="suma"
-              DTS:DTSID="{925BE49B-C5C8-4426-83BA-A67F5FFD3FF5}"
+              DTS:DTSID="{2BDC283A-34F3-43CF-8792-2271510BF6D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="304"
               DTS:TextQualified="True"
               DTS:ObjectName="creata_la"
-              DTS:DTSID="{C768C4C1-1CEA-4BAF-9DB9-035845B152B3}"
+              DTS:DTSID="{7CC572C7-93B8-4C34-8A2C-568CF926C5DF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -423,7 +423,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\07_IstoricRating.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\07_IstoricRating.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -431,7 +431,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_istoric"
-              DTS:DTSID="{DC58B8DA-8A5C-4832-89DC-D83FB980B1B8}"
+              DTS:DTSID="{32E57036-1C94-4F0B-954E-EAB370320DA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -439,7 +439,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator"
-              DTS:DTSID="{076F0D9C-EE2C-44D7-8F0D-9407F7654892}"
+              DTS:DTSID="{2B1AB879-17EB-4783-8941-82C21D89D20E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +447,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_meci"
-              DTS:DTSID="{2B8B2490-FB45-4D80-AEBB-2AEC9D942381}"
+              DTS:DTSID="{B109B702-0C54-43D4-8608-DDC883C304A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -455,7 +455,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="rating_inainte"
-              DTS:DTSID="{146102BA-D80A-46C2-880E-94A2A8F43DA6}"
+              DTS:DTSID="{80E05630-8684-4B7A-A501-F857D35E8CF1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -463,7 +463,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="rating_dupa"
-              DTS:DTSID="{9FD74778-0393-4E2B-9D8A-24791B8BC569}"
+              DTS:DTSID="{E8500D49-5516-4594-B535-D5092C32B43C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -471,7 +471,7 @@
               DTS:DataType="304"
               DTS:TextQualified="True"
               DTS:ObjectName="data"
-              DTS:DTSID="{7458285F-072E-438F-8F2A-A4F8550DC678}"
+              DTS:DTSID="{341945E2-1A7C-4CE7-B7F7-A0BD2CFAFAE2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -491,7 +491,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\YessirBook-Go\Desktop\date_hack\06_Meciuri.csv">
+          DTS:ConnectionString="C:\Users\bia\Desktop\github\CueUp\data\06_Meciuri.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -499,7 +499,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_meci"
-              DTS:DTSID="{EAC36A1C-479B-4BDB-B605-BC6A71B5AAC6}"
+              DTS:DTSID="{EE4E4187-3074-4BA3-ABA2-5FF3BAA3534F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -507,7 +507,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_rezervare"
-              DTS:DTSID="{05E179CB-6F01-4E3F-B602-037F9FF3DE9F}"
+              DTS:DTSID="{1E3F3A88-B03E-4A5F-A3D3-29E30801BF30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -515,7 +515,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator_1"
-              DTS:DTSID="{EBCC3BF6-3359-4F58-A44A-1693716C34E0}"
+              DTS:DTSID="{C8BC5321-6D85-4924-9598-F51BE07EC271}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -523,7 +523,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="id_jucator_2"
-              DTS:DTSID="{3D68E190-64DA-466B-BC01-43437B48F92A}"
+              DTS:DTSID="{B2F5C3F0-E514-462D-9911-B2F64B30B4A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -531,7 +531,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="scor_1"
-              DTS:DTSID="{4F1361A8-8CC9-4C37-9A0F-3F72C9CC94BA}"
+              DTS:DTSID="{9B906152-2EF2-4A82-A79B-BF369567F1B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -539,7 +539,7 @@
               DTS:DataType="19"
               DTS:TextQualified="True"
               DTS:ObjectName="scor_2"
-              DTS:DTSID="{FF50C1F6-04D1-4875-A607-C5406534A477}"
+              DTS:DTSID="{3B7773EF-2754-4DAC-A316-384B2DA09B8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -547,7 +547,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="id_castigator"
-              DTS:DTSID="{88347798-DF97-4205-9FA6-D2AFAAFB1473}"
+              DTS:DTSID="{733C3927-087E-4F8B-ADBC-D504A74E5999}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -556,7 +556,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="tip"
-              DTS:DTSID="{23EA2EF7-2C64-449A-A8D9-161C9AF0DFBF}"
+              DTS:DTSID="{D7721393-7F68-4C8E-BA2E-FAC4C8934B64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -565,7 +565,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="stare"
-              DTS:DTSID="{38464BE2-05BF-403E-89FD-0365FE492294}"
+              DTS:DTSID="{9DF38464-EF62-4ACF-B9CE-1B730F4FBE54}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -605,12 +605,13 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}"
-          SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)      NOT NULL,&#xA;    email           VARCHAR(150)      NOT NULL UNIQUE,&#xA;    id_oras         INT               NOT NULL,&#xA;    nivel_declarat  INT               NOT NULL,&#xA;    rating_elo      INT               NOT NULL,&#xA;    data_inscriere  DATE              NOT NULL,&#xA;    parola          VARCHAR(30)       NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_masa       INT               NOT NULL,&#xA;    id_jucator    INT               NOT NULL,&#xA;    data_start    DATETIME2(0)      NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)      NOT NULL,&#xA;    status        VARCHAR(15)       NOT NULL,&#xA;    suma          DECIMAL(10,2)     NOT NULL,&#xA;    creata_la     DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT               NOT NULL UNIQUE,&#xA;    id_jucator_1  INT               NOT NULL,&#xA;    id_jucator_2  INT               NULL,&#xA;    scor_1        INT               NULL,&#xA;    scor_2        INT               NULL,&#xA;    id_castigator INT               NULL,&#xA;    tip           VARCHAR(10)       NOT NULL,&#xA;    stare         VARCHAR(15)       NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Stare CHECK (stare IN ('finalizat','programat','asteptare','expirat','fara_rezultat')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT               NOT NULL,&#xA;    id_meci         INT               NOT NULL,&#xA;    rating_inainte  INT               NOT NULL,&#xA;    rating_dupa     INT               NOT NULL,&#xA;    data            DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="IF OBJECT_ID('dbo.IstoricRating','U') IS NOT NULL DROP TABLE dbo.IstoricRating;&#xA;IF OBJECT_ID('dbo.Ratings','U')       IS NOT NULL DROP TABLE dbo.Ratings;&#xA;IF OBJECT_ID('dbo.Meciuri','U')       IS NOT NULL DROP TABLE dbo.Meciuri;&#xA;IF OBJECT_ID('dbo.Rezervari','U')     IS NOT NULL DROP TABLE dbo.Rezervari;&#xA;IF OBJECT_ID('dbo.Jucatori','U')      IS NOT NULL DROP TABLE dbo.Jucatori;&#xA;IF OBJECT_ID('dbo.Mese','U')          IS NOT NULL DROP TABLE dbo.Mese;&#xA;IF OBJECT_ID('dbo.Cluburi','U')       IS NOT NULL DROP TABLE dbo.Cluburi;&#xA;IF OBJECT_ID('dbo.Orase','U')         IS NOT NULL DROP TABLE dbo.Orase;&#xA;&#xA;CREATE TABLE dbo.Orase (&#xA;    id_oras     INT          NOT NULL PRIMARY KEY,&#xA;    nume_oras   VARCHAR(80)  NOT NULL,&#xA;    judet       VARCHAR(80)  NOT NULL&#xA;);&#xA;&#xA;CREATE TABLE dbo.Cluburi (&#xA;    id_club         INT           NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)  NOT NULL,&#xA;    id_oras         INT           NOT NULL,&#xA;    adresa          VARCHAR(200)  NULL,&#xA;    telefon         VARCHAR(20)   NULL,&#xA;    ora_deschidere  VARCHAR(5)    NOT NULL,&#xA;    ora_inchidere   VARCHAR(5)    NOT NULL,&#xA;    rating_club     DECIMAL(2,1)  NULL,&#xA;    CONSTRAINT FK_Cluburi_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Cluburi_Rating CHECK (rating_club BETWEEN 1.0 AND 5.0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Mese (&#xA;    id_masa     INT           NOT NULL PRIMARY KEY,&#xA;    id_club     INT           NOT NULL,&#xA;    cod_masa    VARCHAR(10)   NOT NULL,&#xA;    tip_masa    VARCHAR(15)   NOT NULL,&#xA;    tarif_orar  DECIMAL(8,2)  NOT NULL,&#xA;    activa      BIT           NOT NULL,&#xA;    CONSTRAINT FK_Mese_Cluburi FOREIGN KEY (id_club) REFERENCES dbo.Cluburi(id_club),&#xA;    CONSTRAINT UQ_Mese_Club_Cod UNIQUE (id_club, cod_masa),&#xA;    CONSTRAINT CK_Mese_Tip CHECK (tip_masa IN ('pool','snooker','carambol')),&#xA;    CONSTRAINT CK_Mese_Tarif CHECK (tarif_orar &gt; 0)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Jucatori (&#xA;    id_jucator      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    nume            VARCHAR(120)      NOT NULL,&#xA;    email           VARCHAR(150)      NOT NULL UNIQUE,&#xA;    id_oras         INT               NOT NULL,&#xA;    nivel_declarat  INT               NOT NULL,&#xA;    rating_elo      INT               NOT NULL,&#xA;    data_inscriere  DATE              NOT NULL,&#xA;    parola          VARCHAR(30)       NOT NULL,&#xA;    CONSTRAINT FK_Jucatori_Orase FOREIGN KEY (id_oras) REFERENCES dbo.Orase(id_oras),&#xA;    CONSTRAINT CK_Jucatori_Nivel CHECK (nivel_declarat BETWEEN 1 AND 5)&#xA;);&#xA;&#xA;CREATE TABLE dbo.Rezervari (&#xA;    id_rezervare  INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_masa       INT               NOT NULL,&#xA;    id_jucator    INT               NOT NULL,&#xA;    data_start    DATETIME2(0)      NOT NULL,&#xA;    data_sfarsit  DATETIME2(0)      NOT NULL,&#xA;    status        VARCHAR(15)       NOT NULL,&#xA;    suma          DECIMAL(10,2)     NOT NULL,&#xA;    creata_la     DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Rezervari_Mese     FOREIGN KEY (id_masa)    REFERENCES dbo.Mese(id_masa),&#xA;    CONSTRAINT FK_Rezervari_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Rezervari_Status   CHECK (status IN ('confirmata','finalizata','anulata','no_show')),&#xA;    CONSTRAINT CK_Rezervari_Interval CHECK (data_sfarsit &gt; data_start),&#xA;    CONSTRAINT CK_Rezervari_Creare   CHECK (creata_la &lt; data_start)&#xA;);&#xA;&#xA;CREATE INDEX IX_Rezervari_Masa_Interval ON dbo.Rezervari (id_masa, data_start, data_sfarsit) INCLUDE (status);&#xA;CREATE INDEX IX_Rezervari_Jucator ON dbo.Rezervari (id_jucator, data_start);&#xA;&#xA;CREATE TABLE dbo.Meciuri (&#xA;    id_meci       INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_rezervare  INT               NOT NULL UNIQUE,&#xA;    id_jucator_1  INT               NOT NULL,&#xA;    id_jucator_2  INT               NULL,&#xA;    scor_1        INT               NULL,&#xA;    scor_2        INT               NULL,&#xA;    id_castigator INT               NULL,&#xA;    tip           VARCHAR(10)       NOT NULL,&#xA;    stare         VARCHAR(15)       NOT NULL,&#xA;    CONSTRAINT FK_Meciuri_Rezervari  FOREIGN KEY (id_rezervare)  REFERENCES dbo.Rezervari(id_rezervare),&#xA;    CONSTRAINT FK_Meciuri_Jucator1   FOREIGN KEY (id_jucator_1)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Jucator2   FOREIGN KEY (id_jucator_2)  REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Meciuri_Castigator FOREIGN KEY (id_castigator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT CK_Meciuri_Tip   CHECK (tip IN ('privat','deschis')),&#xA;    CONSTRAINT CK_Meciuri_Adversari CHECK (id_jucator_2 IS NULL OR id_jucator_2 &lt;&gt; id_jucator_1),&#xA;    CONSTRAINT CK_Meciuri_Castigator_Valid CHECK (id_castigator IS NULL OR id_castigator IN (id_jucator_1, id_jucator_2))&#xA;);&#xA;&#xA;CREATE INDEX IX_Meciuri_Deschise ON dbo.Meciuri (tip, stare) INCLUDE (id_jucator_1, id_rezervare);&#xA;&#xA;CREATE TABLE dbo.IstoricRating (&#xA;    id_istoric      INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    id_jucator      INT               NOT NULL,&#xA;    id_meci         INT               NOT NULL,&#xA;    rating_inainte  INT               NOT NULL,&#xA;    rating_dupa     INT               NOT NULL,&#xA;    data            DATETIME2(0)      NOT NULL,&#xA;    CONSTRAINT FK_Istoric_Jucatori FOREIGN KEY (id_jucator) REFERENCES dbo.Jucatori(id_jucator),&#xA;    CONSTRAINT FK_Istoric_Meciuri  FOREIGN KEY (id_meci)    REFERENCES dbo.Meciuri(id_meci),&#xA;    CONSTRAINT UQ_Istoric_Jucator_Meci UNIQUE (id_jucator, id_meci)&#xA;);&#xA;&#xA;CREATE INDEX IX_Istoric_Jucator_Data ON dbo.IstoricRating (id_jucator, data);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Sequence Container"
       DTS:CreationName="STOCK:SEQUENCE"
+      DTS:DelayValidation="True"
       DTS:Description="Sequence Container"
       DTS:DTSID="{BFC709C1-AC6B-4E6C-985F-262E04EE6261}"
       DTS:ExecutableType="STOCK:SEQUENCE"
@@ -3807,39 +3808,39 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166.5,42"
+          Size="166.4,41.6"
           Id="Package\CHECK_ID"
           TopLeft="309.388888888889,737.768517833939" />
         <NodeLayout
-          Size="109.5,42"
+          Size="162.4,41.6"
           Id="Package\DROP + CREATE"
           TopLeft="335,34.6666664944755" />
         <NodeLayout
-          Size="141.5,42"
+          Size="141.6,41.6"
           Id="Package\Sequence Container\Load_Cluburi"
           TopLeft="284.428571428571,90.0952358198545" />
         <NodeLayout
-          Size="166.5,42"
+          Size="166.4,41.6"
           Id="Package\Sequence Container\Load_IstoricRating"
           TopLeft="258.642857142857,477.869045985537" />
         <NodeLayout
-          Size="145,42"
+          Size="144.8,41.6"
           Id="Package\Sequence Container\Load_Jucatori"
           TopLeft="276.357142857143,249.988093181794" />
         <NodeLayout
-          Size="142,42"
+          Size="142.4,41.6"
           Id="Package\Sequence Container\Load_Meciuri"
           TopLeft="273.642857142857,402.952379184346" />
         <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\Sequence Container\Load_Mese"
           TopLeft="281.357142857143,174.297616860637" />
         <NodeLayout
-          Size="138,43.5"
+          Size="137.6,43.2"
           Id="Package\Sequence Container\Load_Orase"
           TopLeft="280.5,5.29761766778347" />
         <NodeLayout
-          Size="153,42"
+          Size="152.8,41.6"
           Id="Package\Sequence Container\Load_Rezervari"
           TopLeft="272.285714285714,328.035712383155" />
         <EdgeLayout
@@ -3977,24 +3978,36 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="693,532"
-          Size="693,575"
+          PanelSize="692.8,532"
+          Size="692.8,575.2"
           Id="Package\Sequence Container"
-          TopLeft="40.5714285714282,120.559523210698" />
+          TopLeft="40.5714285714279,120.559523210698" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="388.410714285714,76.6666664944755">
+          TopLeft="416.2,76.2666664944755">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.8928567162225"
+              EndConnector="-29.228571428572,44.2928567162223"
               Start="0,0"
-              End="0,36.3928567162225">
+              End="-29.228571428572,36.7928567162223">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.3928567162225" />
+                    End="0,18.1464283581112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.1464283581112"
+                    Point2="0,22.1464283581112"
+                    Point3="-4,22.1464283581112" />
+                  <mssgle:LineSegment
+                    End="-25.228571428572,22.1464283581112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.228571428572,22.1464283581112"
+                    Point2="-29.228571428572,22.1464283581112"
+                    Point3="-29.228571428572,26.1464283581112" />
+                  <mssgle:LineSegment
+                    End="-29.228571428572,36.7928567162223" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4005,18 +4018,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="389.855158730159,695.559523210698">
+          TopLeft="389.780158730158,695.759523210698">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.2089946232409"
+              EndConnector="0,42.0089946232412"
               Start="0,0"
-              End="0,34.7089946232409">
+              End="0,34.5089946232412">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.7089946232409" />
+                    End="0,34.5089946232412" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4138,15 +4151,15 @@
     design-time-name="Package\Sequence Container\Load_Jucatori">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="134.5,42"
-          Id="Package\Sequence Container\Load_Jucatori\jucatori_csv"
-          TopLeft="124.5,110.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="116,42"
           Id="Package\Sequence Container\Load_Jucatori\Jucatori"
           TopLeft="130.5,232.5" />
+        <NodeLayout
+          Size="134.5,42"
+          Id="Package\Sequence Container\Load_Jucatori\jucatori_csv"
+          TopLeft="124.5,110.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Load_Jucatori.Paths[Flat File Source Output]"
           TopLeft="190.125,152.5">
@@ -4166,7 +4179,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

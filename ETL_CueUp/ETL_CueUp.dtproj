@@ -16,7 +16,7 @@
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{09a2b322-2778-4c46-b6c4-d84cddc86154}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">ETL_CueUp</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-ERNPVS5</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAA2h0hUaq6k2cKw5MK8kWYgAAAAACAAAAAAAQZgAAAAEAACAAAAAQAsZkgnTj+tDYjzhx7aH6i7H8RSmFQGjrzaNr7zcAPQAAAAAOgAAAAAIAACAAAAA2lgzcqaWji+ZChRFtfbTYv1YLU+OETd4Hin2EMxT4n5AAAACKMU/aadvJc+oJIxVuvH58BRvtLF0FIvmVAvSRsToDLp8TIYgazfF+erneJyUtF3XI+Uw86xypGDYTUTyI1O2HxIuHBPPX9ZRQWBGF+QAi/TJN9JwYgJh0SWlkqPo2qO9LPalPJMub98uiwK7nB7pU3c0r9Z9OmGUYNsOi3RAUGA3vM/fm5dL8knzToC29YeZAAAAAMWpzSzNEQVTOdpNuC2x6nLgY1i7jSqi8aSUaXNJwu2RDPPLmtWGKGtF0/kQSX4S+UQmfK0gQMFAgg5vliDHzeQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKKny0nQh5UGVSux3XOcE9wAAAAACAAAAAAAQZgAAAAEAACAAAACFoq0z9sA1aI2iSSQzjgeGcKOcbdwcgP4NiZydKdWrNwAAAAAOgAAAAAIAACAAAADl+ULZRQDMXqnJVRRptfivI6FQfS2AtAADpt5QUc1wY5AAAAAdqkE+W0CXlR0UVqk8bkk9NRiNKPHum1U0bh3M8kCHZusBU12c/0HEe1zTXU0TmXyPGQPD97DVdCMVCsrlvb2VpVBjjJh8Krepj6KAxB1PNRMQY9vpWmnnOhFFZDOLFEzqZXrVf0kxXwaf8BVnN10/m0o3xxQiHjzshf23HpZFHCuTazr7Jb4GDpbSnO5HITZAAAAAwOviqhCQLZF5lNdRdLmRfw6rCDyysj7eoyqyKu/i4KzHiE0I4BCffaFWFkobMfdzHB5HQz1VlHj5YY6dlPOHIg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">35</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">44</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{99043276-67D2-4378-B12C-65CF74AB7FDC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3038082D-C621-4552-A9B6-9049A8EA44C7}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -123,7 +123,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\02_Cluburi.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\02_Cluburi.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -275,7 +275,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=datajourney-hackaton.database.windows.net;User ID=sqladmin;Initial Catalog=CueUp;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}***SERVER-ELIMINAT-DIN-ISTORIC***.CueUp.***USER-ELIMINAT-DIN-ISTORIC***;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=project-server-mba.database.windows.net;User ID=bianca_admin;Initial Catalog=CueUpDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{A93CD923-1C08-4CD2-BA93-F365BA3F44E7}***SERVER-ELIMINAT-DIN-ISTORIC***.CueUp.***USER-ELIMINAT-DIN-ISTORIC***;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -335,7 +335,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">CueUp</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">CueUpDB</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -379,7 +379,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">datajourney-hackaton.database.windows.net</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">project-server-mba.database.windows.net</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -394,7 +394,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">sqladmin</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">bianca_admin</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -469,7 +469,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\hacka\CueUp\data\04_Jucatori.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\04_Jucatori.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -666,7 +666,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\03_Mese.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\03_Mese.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -863,7 +863,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\01_Orase.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\01_Orase.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1060,7 +1060,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\05_Rezervari.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\05_Rezervari.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1257,7 +1257,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\07_IstoricRating.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\07_IstoricRating.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1454,7 +1454,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\YessirBook-Go\Desktop\date_hack\06_Meciuri.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\bia\Desktop\github\CueUp\data\06_Meciuri.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
